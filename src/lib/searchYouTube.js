@@ -20,3 +20,16 @@ var searchYouTube = ({key, query, max = 5}, callback) => {
 };
 
 export default searchYouTube;
+
+/* 
+
+Fetch API Methid : 
+
+var searchYouTube = ({key, query, max = 5}, callback) => {
+  fetch('https://www.googleapis.com/youtube/v3/search')
+  .then(data => data.json())
+  .then(data => callback(data))
+  .catch(err => console.log(err))
+};
+
+*/
