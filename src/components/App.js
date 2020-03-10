@@ -1,14 +1,14 @@
 import React from 'react';
 import VideoListContainer from '../containers/VideoListContainer.js';
 import VideoPlayerContainer from '../containers/VideoPlayerContainer.js';
-import Search from './Search.js';
+import SearchContainer from '../containers/SearchContainer.js';
 
 export default class App extends React.Component {
 
   render() {
     return (
       <div>
-        <Search />
+        <SearchContainer />
         <div className="row">
           <div className="col-md-7">
             <VideoPlayerContainer />
