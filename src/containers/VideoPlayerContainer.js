@@ -8,7 +8,12 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-  return {};
+  return {
+    handleVideoListEntryTitleClick: (video) => dispatch({
+      type: 'CHANGE_VIDEO',
+      video
+    })
+  }
 };
 
-export default connect(mapStateToProps)(VideoPlayer);
+export default connect(mapStateToProps, mapDispatchToProps)(VideoPlayer);

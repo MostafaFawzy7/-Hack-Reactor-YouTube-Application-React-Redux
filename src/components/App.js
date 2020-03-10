@@ -1,20 +1,20 @@
 import React from 'react';
-import VideoListContainer from '../containers/VideoListContainer.js';
-import VideoPlayerContainer from '../containers/VideoPlayerContainer.js';
-import SearchContainer from '../containers/SearchContainer.js';
+import VideoList from './VideoList.js';
+import VideoPlayer from './VideoPlayer.js';
+import Search from './Search.js';
 
 export default class App extends React.Component {
 
   render() {
     return (
       <div>
-        <SearchContainer />
+        <Search />
         <div className="row">
           <div className="col-md-7">
-            <VideoPlayerContainer />
+            <VideoPlayer />
           </div>
           <div className="col-md-5">
-            <VideoListContainer />
+            <VideoList />
           </div>
         </div>
       </div>

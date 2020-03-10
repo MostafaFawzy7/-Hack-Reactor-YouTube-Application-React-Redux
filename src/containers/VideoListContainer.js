@@ -9,9 +9,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    handleVideoListEntryTitleClick: (video) => dispatch({
-      type: 'CHANGE_VIDEO',
-      video: video
+    handleVideoListEntryTitleClick: (videos) => dispatch({
+      type: 'CHANGE_VIDEO_LIST',
+      videos
     })
   };
 };
