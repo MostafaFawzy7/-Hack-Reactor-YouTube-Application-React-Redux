@@ -1,17 +1,6 @@
 import React from 'react';
  
 class Search extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      value: ''
-    };
-  }
-
-  handleInputChange(e) {
-    this.props.handleSearchInputChange(e.target.value);
-  }
 
   render() {
     return (
